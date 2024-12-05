@@ -1,0 +1,16 @@
+package kz.iitu.quizmidterm1and2andfinalexamtest
+
+import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.RequestMapping
+import org.springframework.web.bind.annotation.RestController
+
+
+@RestController
+@RequestMapping("/api")
+class Controller1 {
+
+    @GetMapping("/hello")
+    fun helloEndpoint(): String {
+        return "Hello, Spring from Controller1!"
+    }
+}
